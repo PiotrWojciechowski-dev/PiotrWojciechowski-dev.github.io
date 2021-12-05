@@ -8,6 +8,14 @@
     height: 800px;
 }
 
+#interests {
+    height: 800px;
+}
+
+#contactMe {
+    height: 50px;
+}
+
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/IMG-20211201-WA0017.png");
     height: 100%;
@@ -50,7 +58,7 @@ i {
     width: 120px;
     height: 2px;
     background: #0563bb;
-    top: 17%;
+    top: 23%;
     transform: translate(-50%, -50%);
     left: 50%
 }
@@ -66,4 +74,8 @@ i {
         top: 11%;
         width: 90px;
     }
+}
+
+ul {
+    list-style-type: none;
 }
