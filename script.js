@@ -18,4 +18,10 @@ $('document').ready(function(){
             form.classList.add('was-validated')
         }, false)
     });
+
+    $(".progress-bar").each(function(i) {
+        $(this).animate({
+          width: $(this).attr('aria-valuenow') + '%'
+        }, 2000);
+    });
 });

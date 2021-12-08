@@ -8,14 +8,6 @@
     height: 800px;
 }
 
-#interests {
-    height: 800px;
-}
-
-#contactMe {
-    height: 50px;
-}
-
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/IMG-20211201-WA0017.png");
     height: 100%;
@@ -41,6 +33,11 @@ i {
     margin-right: 10px;
 }
 
+#aboutMe {
+    height: 800px;
+    margin-bottom: 50px;
+}
+
 .box {
     margin-top: 60px;
     padding: 48px 20px;
@@ -49,6 +46,10 @@ i {
     margin-bottom: 3rem;
     z-index: 2;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.progress .progress-bar {
+    transition: unset;
 }
 
 .about::before {
@@ -78,4 +79,35 @@ i {
 
 ul {
     list-style-type: none;
+}
+
+#education {
+    height: 800px;
+}
+
+
+.title-edu::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 125px;
+    height: 2px;
+    background: #0563bb;
+    left: 47%
+}
+
+.btn-outline-info {
+    color:  black !important;
+}
+
+#workExp {
+    height: 800px;
+}
+
+#projects {
+    height: 800px;
+}
+
+#interests {
+    height: 800px;
 }
