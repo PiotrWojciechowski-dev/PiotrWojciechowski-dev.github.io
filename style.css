@@ -105,9 +105,24 @@ ul {
 }
 
 #projects {
-    height: 800px;
+    height: 1100px;
 }
 
 #interests {
     height: 800px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: black;
+    height: 5px;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    filter: invert(1) grayscale(100);
+}
+
+@media (max-width: 575px) {
+    #projects {
+        height: 2400px;
+    }
 }
