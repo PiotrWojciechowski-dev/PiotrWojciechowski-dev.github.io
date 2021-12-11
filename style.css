@@ -34,7 +34,6 @@ i {
 }
 
 #aboutMe {
-    height: 800px;
     margin-bottom: 50px;
 }
 
@@ -52,60 +51,28 @@ i {
     transition: unset;
 }
 
-.about::before {
+.section-title h2 {
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section-title h2::before {
     content: "";
     position: absolute;
     display: block;
     width: 120px;
-    height: 2px;
+    height: 3px;
+    bottom: 1px;
     background: #0563bb;
-    top: 23%;
-    transform: translate(-50%, -50%);
-    left: 50%
-}
-
-@media (max-width: 992px) {
-    .about::before {
-        top: 15%;
-    }
-}
-
-@media (max-width: 768px) {
-    .about::before {
-        top: 11%;
-        width: 90px;
-    }
+    left: calc(50% - 60px);
 }
 
 ul {
     list-style-type: none;
 }
 
-#education {
-    height: 800px;
-}
-
-
-.title-edu::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 125px;
-    height: 2px;
-    background: #0563bb;
-    left: 47%
-}
-
-.btn-outline-info {
-    color:  black !important;
-}
-
 #workExp {
     height: 800px;
-}
-
-#projects {
-    height: 1100px;
 }
 
 #interests {
@@ -121,8 +88,12 @@ ul {
     filter: invert(1) grayscale(100);
 }
 
-@media (max-width: 575px) {
-    #projects {
-        height: 2400px;
+@media (max-width: 768px) {
+    .eduInfo {
+        text-align: center;
+    }
+    .year {
+        margin-bottom: 30px;
+        margin-left: 50px;
     }
 }
