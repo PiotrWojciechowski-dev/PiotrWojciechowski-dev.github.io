@@ -8,6 +8,10 @@
     height: 800px;
 }
 
+.topics {
+    padding-top: 48px;
+}
+
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/IMG-20211201-WA0017.png");
     height: 100%;
@@ -38,13 +42,16 @@ i {
 }
 
 .box {
-    margin-top: 60px;
-    padding: 48px 20px;
+    padding: 20px 28px;
     position: relative;
     background-color: #fff;
     margin-bottom: 3rem;
     z-index: 2;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.about {
+    padding: 48px 20px;
 }
 
 .progress .progress-bar {
@@ -68,15 +75,6 @@ i {
 }
 
 ul {
-    list-style-type: none;
-}
-
-#workExp {
-    height: 800px;
-}
-
-#interests {
-    height: 800px;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -97,3 +95,4 @@ ul {
         margin-left: 50px;
     }
 }
+
