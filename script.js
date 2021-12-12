@@ -8,8 +8,6 @@ $('document').ready(function(){
     $('#projectModal').on('show.bs.modal', function (event) {
         var button = $(event.relatedTarget) // Button that triggered the modal
         var title = button.data('whatever') // Extract info from data-* attributes
-        // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
-        // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
         var modal = $(this)
         modal.find('.modal-title').text(title)
         getData(title, event)
@@ -107,7 +105,12 @@ function getData(title) {
             $('#image3').attr("src", imgPath + "da_3.png")
             $('.modal-body p.status').html("<strong>Status: </strong>Completed")
             $('#githubLink').attr("href","https://github.com/PiotrWojciechowski-dev/DataAnalysis_Project")
-            
+        case "Overlearn":
+            $('#image').attr("src", imgPath + "overlearn_1.png")
+            $('#image2').attr("src", imgPath + "overlearn_2.png")
+            $('#image3').attr("src", imgPath + "overlearn_3.png")
+            $('.modal-body p.status').html("<strong>Status: </strong>Under Development")
+            $('#githubLink').attr("href","https://github.com/PiotrWojciechowski-dev/OverLearn")
             break;
     }
 }

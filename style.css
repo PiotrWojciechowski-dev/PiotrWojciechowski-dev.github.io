@@ -74,9 +74,6 @@ i {
     left: calc(50% - 60px);
 }
 
-ul {
-}
-
 .carousel-indicators [data-bs-target] {
     background-color: black;
     height: 5px;
@@ -96,3 +93,21 @@ ul {
     }
 }
 
+.content {
+    position: relative;
+}
+
+.interest::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 60px;
+    background: #e9ecef;
+    z-index: 1;
+}
+
+#contactMe {
+    margin-top: 100px;
+}
