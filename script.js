@@ -27,10 +27,10 @@ $('document').ready(function(){
         }, false)
     });
 
-    $(".progress-bar").each(function(i) {
+    $(".progress-bar").each(function() {
         $(this).animate({
           width: $(this).attr('aria-valuenow') + '%'
-        }, 2000);
+        }, 3500);
     });
     
     var $row = $('.cardProjects').masonry({
