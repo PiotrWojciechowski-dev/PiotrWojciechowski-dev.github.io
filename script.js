@@ -8,8 +8,8 @@ $('document').ready(function(){
     $('#projectModal').on('show.bs.modal', function (event) {
         var button = $(event.relatedTarget) // Button that triggered the modal
         var title = button.data('whatever') // Extract info from data-* attributes
-        var modal = $(this)
-        modal.find('.modal-title').text(title)
+        var modal = $(this) // finds current modal
+        modal.find('.modal-title').text(title) // sets the modal-title
         getData(title, event)
     });
 
@@ -63,12 +63,19 @@ $('document').ready(function(){
 
 function getData(title) {
     var imgPath = "images/project_images/"
+    $("#image").removeClass("img-resp");
+    $("#image2").removeClass("img-resp");
+    $("#image3").removeClass("img-resp");
     switch(title) {
         case "Translation App":
             $('#image').attr("src", imgPath + "translate_1.png")
             $('#image2').attr("src", imgPath + "translate_2.png")
             $('#image3').attr("src", imgPath + "translate_3.png")
-            $('.modal-body p.status').html("<strong>Status: </strong>Under Development")
+            $("#image").addClass("img-resp");
+            $("#image2").addClass("img-resp");
+            $("#image3").addClass("img-resp");
+            $('.modal-body .carousel-indicators button').attr('style',  'background-color:white')
+            $('.modal-body p.status').html("<strong>Status: </strong>Completed")
             $('#githubLink').attr("href","https://gitfront.io/r/user-7077611/52d5f15373470f80bcfc83141725e879aa21ac29/4thYear_Project/")
             break;
         case "Social Media website":
@@ -76,6 +83,7 @@ function getData(title) {
             $('#image2').attr("src", imgPath + "loop_2.png")
             $('#image3').attr("src", imgPath + "loop_3.png")
             $('.modal-body p.status').html("<strong>Status: </strong>Completed")
+            $('.modal-body .carousel-indicators button').attr('style',  'background-color:black')
             $('#githubLink').attr("href","https://github.com/PiotrWojciechowski-dev/Loop")
             break;
         case "E-commerce website":
@@ -83,6 +91,7 @@ function getData(title) {
             $('#image2').attr("src", imgPath + "fresh_2.png")
             $('#image3').attr("src", imgPath + "fresh_3.png")
             $('.modal-body p.status').html("<strong>Status: </strong>Completed")
+            $('.modal-body .carousel-indicators button').attr('style',  'background-color:black')
             $('#githubLink').attr("href","https://github.com/PiotrWojciechowski-dev/FreshShop-v2.0")
             break;
         case "Dashboard application":
@@ -90,6 +99,7 @@ function getData(title) {
             $('#image2').attr("src", imgPath + "dash_2.png")
             $('#image3').attr("src", imgPath + "dash_3.png")
             $('.modal-body p.status').html("<strong>Status: </strong>Completed")
+            $('.modal-body .carousel-indicators button').attr('style',  'background-color:black')
             $('#githubLink').attr("href","https://github.com/Team-Dublin-Project/ProjectDashboard")
             break;
         case "Anime website":
@@ -97,6 +107,7 @@ function getData(title) {
             $('#image2').attr("src", imgPath + "aniland_2.png")
             $('#image3').attr("src", imgPath + "aniland_3.png")
             $('.modal-body p.status').html("<strong>Status: </strong>Completed")
+            $('.modal-body .carousel-indicators button').attr('style',  'background-color:black')
             $('#githubLink').attr("href","https://github.com/PiotrWojciechowski-dev/SSWEB/tree/main/CA2")
             break;
         case "Student Alcohol Consumption":
@@ -104,12 +115,15 @@ function getData(title) {
             $('#image2').attr("src", imgPath + "da_2.png")
             $('#image3').attr("src", imgPath + "da_3.png")
             $('.modal-body p.status').html("<strong>Status: </strong>Completed")
+            $('.modal-body .carousel-indicators button').attr('style',  'background-color:black')
             $('#githubLink').attr("href","https://github.com/PiotrWojciechowski-dev/DataAnalysis_Project")
+            break;
         case "Overlearn":
             $('#image').attr("src", imgPath + "overlearn_1.png")
             $('#image2').attr("src", imgPath + "overlearn_2.png")
             $('#image3').attr("src", imgPath + "overlearn_3.png")
             $('.modal-body p.status').html("<strong>Status: </strong>Under Development")
+            $('.modal-body .carousel-indicators button').attr('style',  'background-color:black')
             $('#githubLink').attr("href","https://github.com/PiotrWojciechowski-dev/OverLearn")
             break;
     }
